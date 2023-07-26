@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(40, 18, 105);
+  --secondary-color: rgb(226, 226, 226);
+  --button-color: rgb(27, 1, 104);
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+body {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+.main {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.main .container {
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+.container h1 {
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  text-align: center;
+}
+.container .input-elements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 5px;
+}
+.container .input-elements label {
+  font-weight: bold;
+  font-size: 14px;
+}
+input,
+button {
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container .input-elements input {
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  border: 1px solid black;
+}
+.container .input-elements input:focus {
+  border: 1.5px solid black;
+}
+
+.container .input-elements button {
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.result {
+  width: 300px;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border-radius: 10px;
+}
+.result .block {
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 10px;
+}
+.block span {
+  color: white;
+}
+.block span:first-child {
+  font-size: 30px;
+  font-weight: bold;
+}
