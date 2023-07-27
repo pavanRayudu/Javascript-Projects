@@ -1,0 +1,131 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.main{
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding:  0 20%;
+}
+.main .container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.container .like_button{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+.container .like_button{
+    position: relative;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.container .like_button button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    outline: none;
+}
+.container .like_button i{
+    cursor: pointer;
+    position: absolute;
+    color: rgb(185, 185, 185);
+    transform: scale(1.9);
+}
+.container .like_button i:hover{
+    color: red;
+}
+span{
+    display: block;
+}
+#quote{
+    font-style: italic;
+    font-size: 20px;
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+}
+#author{
+    text-align: right;
+    margin-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(107, 107, 107);
+}
+.liked_quotes-list{
+    border-radius: 10px;
+    padding: 20px 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(131, 131, 131); 
+    border-radius: 5px;
+    
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+.liked_list{
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;   
+}
+.liked_quotes_list-item{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(222, 222, 222);
+}
+.liked_quotes_list-item span {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.liked_quotes_list-item #liked_quote{
+    font-weight: bold;
+}
+#showLikedQuotes{
+    height: 40px;
+    background-color: gray;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
